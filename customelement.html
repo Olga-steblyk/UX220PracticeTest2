@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            class YearElement extends HTMLElement{
+        
+        class Olga extends HTMLElement{
                 connectedCallback(){
-                    this.innerHTML=new Date().getFullYear();
-                }
-            customElements.define("x-fullyear", YearElement);
+                    this.innerHTML = "Olga was Here!";
+                    <x-olga></x-olga>
+                }    
             }
-            
-        </script>
+            customElements.define("x-olga", Olga);
     </head>
     <body>
         <x-fullyear></x-fullyear>
