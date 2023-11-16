@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            class Olga extends HTMLElement{
+                connectCallback(){
+                    this.innerHTML = "Olga was Here!"
+                }    
+            }
+            customeElements.define("x-olga", Olga);
+        </script>
+    </head>
+
+    <body>
+        <x-olga></x-olga>
+    </body>
+</html>
